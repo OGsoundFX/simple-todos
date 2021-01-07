@@ -9,9 +9,19 @@
           {{> task}}
         {{/each}}
       </ul>
+
+      <ul>
+        {{#each priorities}}
+          {{> priority}}
+        {{/each}}
+      </ul>
     </div>
   </body>
   
   <template name="task">
+    <li>{{text}}</li>
+  </template>
+
+  <template name="priority">
     <li>{{text}}</li>
   </template>
